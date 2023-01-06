@@ -1,0 +1,128 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    justify-content: flex-end;
+}
+
+.container svg {
+    font-size: 25px;
+    border: 1px solid whitesmoke;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 5px 10px;
+}
+
+.container svg:hover {
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+.pagination {
+    display: flex;
+    justify-content: start;
+    margin-left: 20px;
+}
+
+.pagination p {
+    margin-top: 13px;
+
+}
+
+.inbox, .sent, .trash {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.unread-mail {
+    display: flex;
+    padding: 10px 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 50px;
+    
+}
+
+.sent-mails {
+    display: flex;
+    padding: 10px 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 50px;
+}
+
+.trash-mails {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 50px;
+    padding: 20px 20px;
+    display: flex;
+}
+
+.unread-mail h4, .sent-mails h4, .trash-mails h4 {
+    display: inline;
+    font-weight: bolder;
+    font-size: 15px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.unread-mail p, .sent-mails p,.trash-mails p {
+    display: inline;
+    margin-left: 200px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.mail-read h4,
+.mail-read p {
+    display: inline;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+
+.unread-mail:hover ,.sent-mails:hover, .trash-mails:hover {
+    cursor: pointer;
+    background-color: rgb(241, 99, 99);
+    color: white;
+    border-radius: 15px;
+}
+
+.unread-mail svg {
+    font-size: 18px;
+}
+
+.unread-mail button {
+    border: none;
+    padding: 0;
+}
+
+.from , .trash-mails .from{
+    display: inline;
+    width: 0%;
+}
+
+.sent-mails .to {
+    display: inline;
+    width: 0%;
+}
+
+.description , .sent-mails .description, .trash-mails .description{
+    display: inline;
+    width: 100%;
+    /* text-overflow: ellipsis;
+    overflow: hidden; */
+}
+
+
+.icons {
+    width: 15%;
+    display: flex;
+    /* justify-content: space-between; */
+    /* align-content: center; */
+}
+.icons:hover {
+    color: black;
+}
+
